@@ -35,16 +35,20 @@
         line-height: 80px;
       }
 
-      .flex-space-between {
-        justify-content: space-between;
+      .flex-space-evenly {
+        justify-content: space-evenly;
       }
 
       .flex-wrap {
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
       }
 
       .flex-basis-item-50 {
         flex-basis: 50%;
+      }
+
+      .flex-basis-item-80 {
+        flex-basis: 80%;
       }
 
       .background-1 {
@@ -78,6 +82,9 @@
       .w-80 {
         width: 80px;
       }
+      .w-200 {
+        width: 200px;
+      }
 
     </style>
   </head>
@@ -102,9 +109,9 @@
 
     <section>
       <h3>Spacing elements on the opposite sides</h3>
-      <div class="flex-container flex-space-between">
+      <div class="flex-container flex-space-evenly">
         <div class="h-80 background-1">I'm on the left</div>
-        <div class="h-80 background-2">I'm on the right</div>
+        <div class="h-80 w-200 background-2">I'm on the right</div>
       </div>
     </section>
 
@@ -113,7 +120,7 @@
       <div class="flex-container flex-wrap">
         <div class="flex-basis-item-50 h-80 background-1"></div>
         <div class="flex-basis-item-50 h-80 background-2"></div>
-        <div class="flex-basis-item-50 h-80 background-3"></div>
+        <div class="flex-basis-item-80 h-80 background-3"></div>
         <div class="flex-basis-item-50 h-80 background-4"></div>
       </div>
     </section>
