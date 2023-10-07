@@ -79,21 +79,26 @@
       }
     @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Young+Serif&display=swap');
       
-        /* V. Styling links */
+      /* V. Styling links */ 
+      a, a:link, a:visited, a:hover, a:active, a:focus {
+        text-decoration-style: none;
+      }
       a:link {
         color: green;
+        background-color:white;
         font-size: 1.8em;
         text-decoration: underline overline dashed orangered;
-      }
-
+      } 
+    
       a:visited {
         color: navy;
         background-color: lightcoral;
-        text-decoration: none;
+        text-decoration-color: lightcoral;
       }
 
       a:hover {
         color: red;
+        background-color: transparent;
         text-decoration: line-through;
       }
 
@@ -102,8 +107,14 @@
         text-decoration: underline;
       }
 
-        /* VI. calc() */
+      a:focus {
+        color: black;
+      }
 
+        /* VI. calc() */
+      .calc-style {
+        width: calc(100vw - 100px);
+      }
     </style>
     <title>Lab 2.3</title>
   </head>
@@ -193,6 +204,7 @@
       <h2>V. Styling links</h2>
       <a
         href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links"
+        target="_blank"
         alt="Styling links with Mozilla"
         >Styling links (Mozilla)</a
       >
