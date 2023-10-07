@@ -5,4 +5,7 @@ Labs for Module 2
 Includes lab 2.1 - HTML
 
 # lab2
-Includes lab 2.2 - CSS
+Includes lab 2.2 - Flexbox
+
+# lab3
+Includes lab 2.3 - CSS
