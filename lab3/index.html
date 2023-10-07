@@ -18,7 +18,7 @@
     #style-me2.style-me1 {
         color: purple;
     }
-      /* Put styles for sections 2.1, and 2.2 here */
+      /* Put styles for sections 2.1 and 2.2 here */
     .my-descendants-are-styled p {
         background-color: red;
     }
@@ -46,10 +46,11 @@
       /* III. Position */
       .position-absolute {
         position: absolute;
-        top: 1rem;
+        top: 10rem;
         right: 0rem;
         bottom: 0rem;
         left: 8rem;
+        z-index: 2;
       }
       .position-relative {
         position: relative;
@@ -63,6 +64,7 @@
         top: 2rem;
         bottom: .5rem;
       }
+
       /* IV. Styling text */
       .text-style {
         color: orange;
@@ -75,11 +77,35 @@
         text-transform: capitalize;
         text-decoration: underline wavy pink;
       }
-  @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Young+Serif&display=swap');
-      /* VI. calc() */
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Young+Serif&display=swap');
+      
+        /* V. Styling links */
+      a:link {
+        color: green;
+        font-size: 1.8em;
+        text-decoration: underline overline dashed orangered;
+      }
+
+      a:visited {
+        color: navy;
+        background-color: lightcoral;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        text-decoration: line-through;
+      }
+
+      a:active {
+        color: purple;
+        text-decoration: underline;
+      }
+
+        /* VI. calc() */
 
     </style>
-    <title>Lab 2.2</title>
+    <title>Lab 2.3</title>
   </head>
   <body>
     <h1>My CSS journey</h1>
